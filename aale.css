@@ -1,0 +1,452 @@
+img {
+    max-width: 100%;
+}
+ 
+.container .navbar-brand {
+    font-size: 25px;
+}
+
+.fas {
+    font-size: 60px;
+    color: white;
+}
+
+.container .navbar-brand:hover {
+    text-decoration: underline;
+}
+
+.navbar-nav li {
+    position: relative;
+}
+
+.navbar-nav li a {
+    position: relative;
+}
+
+.navbar-nav li a:after {
+    background-color: white;
+    content: "";
+    height: 3px;
+    width: 0;
+    bottom: 0px;
+    left: 0px;
+    transition: all ease-in-out 0.3s;
+    position: absolute;
+}
+
+.navbar-nav li a.active:after,
+.navbar-nav li:hover a:after {
+    width: 100%;
+}
+
+
+/* .navbar-nav li a.active { */
+
+
+/* av {
+    background-color: #06202f;
+} */
+
+.nav-item {
+    padding-left: 10px;
+}
+
+.body-part {
+    padding-bottom: 30px;
+}
+
+.container h3 {
+    padding-bottom: 30px;
+    color: black;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.firstAbout {
+    text-align: center;
+}
+
+.firstAbout img {
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.firstAbout h5 span {
+    font-size: 15px;
+    font-style: italic;
+    padding-left: 10px;
+}
+
+.firstAbout h5 {
+    padding-top: 10px;
+}
+
+@media (max-width: 575px) {
+    .container h3 {
+        font-size: 17px;
+    }
+    .firstAbout h5 span {
+        font-size: 6px;
+    }
+    .firstAbout h5 {
+        font-size: 13px;
+    }
+    .firstAbout p {
+        font-size: 11px;
+    }
+    .container .project .row h1 {
+        text-align: center;
+        font-size: 20px;
+    }
+    .project h3 {
+        font-size: 17px;
+    }
+    .logopart .container .row .imagepart h5 {
+        font-size: 17px;
+    }
+    .imagepart-main p {
+        font-size: 16px;
+    }
+}
+
+.body-main {
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+#bodypar {
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .container h3 {
+        font-size: 18px;
+    }
+    .firstAbout h5 {
+        font-size: 15px;
+    }
+    .firstAbout h5 span {
+        font-size: 10px;
+    }
+    .firstAbout p {
+        font-size: 13px;
+    }
+    .container .project .row h1 {
+        font-size: 30px;
+    }
+    .logopart .container .row .imagepart h5 {
+        padding-top: 19px;
+    }
+    .imagepart-main p {
+        font-size: 18px;
+    }
+}
+
+.row-item {
+    padding-bottom: 30px;
+    display: flex;
+}
+
+.background-project {
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 9;
+}
+
+.project h1 {}
+
+.imagepart-main {
+    padding-bottom: 30px;
+}
+
+.project:after {
+    left: 0;
+    top: 0;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0.8;
+}
+
+.project {
+    padding-top: 40px;
+    text-align: center;
+}
+
+
+/* .project h1 {
+    color: white;
+} */
+
+#designer {
+    margin: 17px 0px;
+}
+
+.imagepart-main {
+    cursor: pointer;
+    margin: 17px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* animation tricks below */
+
+.project-item {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-desc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: transform ease-in-out 0.5s;
+}
+
+.project-item img {
+    transition: transform ease-in-out 0.5s;
+}
+
+.project-item:hover img {
+    transform: scale(1.1);
+}
+
+.project-item:hover .project-desc {
+    width: 100%;
+    left: 0;
+    transform: scale(1);
+}
+
+#readmore {
+    font-size: 20px;
+    text-decoration: none;
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    border: 1px solid #06202f;
+    background: #06202f;
+    padding: 5px;
+    border-radius: 4px 4px 4px 4px;
+}
+
+
+/* animation tricks ended */
+
+.latestpost .container #latestpost-firstpart {
+    margin: 15px 0px;
+}
+
+.latestpost .container h4 {
+    font-size: 38px;
+}
+
+.latestpost .container .row .lead {
+    font-size: 15px;
+    padding-top: 20px;
+}
+
+.latestpost .container .row .btn {
+    margin-top: 20px;
+    background: #343a40;
+    border-radius: 4px 4px 4px 4px;
+    padding: 10px 35px 13px 30px;
+}
+
+.project-lastpart {
+    padding-top: 35px;
+}
+
+.project-lastpart img {
+    cursor: pointer;
+}
+
+
+/* .project-lastpart-img:hover {
+    overflow: hidden;
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: transform ease-in-out 0.6s;
+} */
+
+#news {
+    text-decoration: none;
+    font-size: 11px;
+    color: #343a40;
+    opacity: 0.5;
+}
+
+#news:hover {
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+#night {
+    padding-top: 20px;
+    display: block;
+    font-size: 26px;
+    color: #343a40;
+    text-decoration: none;
+}
+
+#night:hover {
+    text-decoration: underline;
+}
+
+.main-part {
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.main-part p {
+    font-display: 15px;
+    padding-top: 20px;
+}
+
+#lastread {
+    font-size: 13.333px;
+    color: #343a40;
+    text-decoration: none;
+}
+
+#lastread:hover {
+    text-decoration: underline;
+}
+
+.list {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.list li a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 6px;
+    font-size: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: #f7f7f7
+}
+
+.list li {
+    text-align: center;
+    padding: 8px;
+}
+
+.list li:hover a {
+    background-color: black;
+    color: white;
+}
+
+.contact h1 {
+    font-size: 45px;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.contact-us {
+    background: #343a40;
+}
+
+#contact-us {
+    font-size: 17px;
+    color: white;
+    opacity: 0.6;
+}
+
+.contactus {
+    padding-top: 30px;
+}
+
+.contact h3 {
+    color: white;
+}
+
+.contact-left {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-left h3 {
+    font-size: 14px;
+}
+
+.headquarter p {
+    padding-top: 20px;
+    display: flex;
+    font-size: 17px;
+    color: white;
+    opacity: 0.6;
+}
+
+.uk-office p {
+    color: white;
+    opacity: 0.6;
+    padding-top: 20px;
+}
+
+form {
+    padding-bottom: 30px;
+    color: white;
+}
+
+.connect h2 {
+    color: white;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.social-media {
+    padding-bottom: 30px;
+    font-size: 25px;
+}
+
+.social-media ul {
+    list-style: none;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+
+.social-media ul li a {
+    padding-right: 20px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.social-media ul li a i:hover {
+    opacity: 0.5;
+}
+
+.map {
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width:992px) {
+    form {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
